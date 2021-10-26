@@ -1,0 +1,20 @@
+Questions regarding Uploaded Image Classification:
+
+1. Did the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed? If not, report the differences in the classifications.
+
+Answer: I chose a German Shepherd image, after running it with the "sh run_models_batch_uploaded.sh" command line argument, all three model architectures accurately classified the image in Dog_01. 
+
+
+2. Did each of the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed of dog as that model architecture classified Dog_02.jpg? If not, report the differences in the classifications.
+
+Answer: After running the three model architectures, AlexNet and Vgg returned "malinois" as the breed for the inverted image. While Resnet accurately labelled the image in Dog_02 as a German Shepherd. So, only Resnet was accurate in classifying both Dog_01 and Dog_02.
+
+
+3. Did the three model architectures correctly classify Animal_Name_01.jpg and Object_Name_01.jpg to not be dogs? If not, report the misclassifications.
+
+Answer: All three Model Architectures accurately classified the Animal images, in this case, "a cat/tiger cat". While for the coffee mug which I chose as the last image in the folder, The Vgg and Resnet Architectures classified it as a "Coffee mug", the Alexnet architecture was not so far off the mark and classified it as a "cup". 
+
+
+4. Based upon your answers for questions 1. - 3. above, select the model architecture that you feel did the best at classifying the four uploaded images. Describe why you selected that model architecture as the best on uploaded image classification.
+
+Answer: Of all three model architectures, Resnet was the most accurate with a score of 100% for the questions asked above, even though VGG performed best in the testing for the check_images.py file. In addition to that, the time Resnet took to run the classification was the shortest (0.0.0 duration). Having said this, for the uploaded images, Resnet is the best model architecture.  
